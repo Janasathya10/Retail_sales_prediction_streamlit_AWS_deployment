@@ -1,0 +1,37 @@
+
+**Insights from the Project**
+
+1. Sales Forecasting Accuracy
+	• The ANN and SARIMAX models provided accurate predictions for weekly sales trends.
+	• The time-series model captured seasonal patterns and holiday fluctuations well, improving planning for peak seasons.
+2. Markdown Strategy Effectiveness
+	• Markdowns, especially MarkDown1 and MarkDown2, significantly boosted sales during promotional periods.
+	• However, excessive markdowns outside holiday weeks had limited effect, indicating markdowns are most effective during high-traffic periods.
+3. Holiday vs Non-Holiday Impact
+	• Holiday weeks (like Thanksgiving and Christmas) showed a 30–50% increase in sales across all store types.
+	• Promotions combined with holidays had a multiplicative effect on sales.
+4. Store Type Performance
+	• Store Type A had consistently higher sales, likely due to larger size and inventory variety.
+	• Store Type C underperformed, suggesting a potential area for optimization or reduced stocking.
+5. Feature Impact
+	• Features like CPI and unemployment had moderate correlation with sales in specific regions — economic indicators can be used to fine-tune inventory decisions.
+
+
+**Recommendations**
+
+1. Optimize Markdown Timing
+	• Use markdowns strategically around holidays, especially in Store Types A and B.
+	• Avoid frequent markdowns during low-traffic weeks, as they do not yield significant ROI.
+2. Inventory & Stock Planning
+	• Use the weekly forecasts to plan stock levels 2–3 weeks in advance.
+	• Allocate more inventory to Store Type A during holiday seasons.
+3. Automate Model Re-training
+	• Retrain the model monthly with new sales data to keep the forecasts up to date.
+	• Schedule retraining using cron jobs or Lambda (if hosted in AWS S3 + SageMaker in future versions).
+4. Enhance User Dashboard
+	• Add filters by department, region, and time range in Streamlit to give managers more control.
+	• Consider integrating Power BI or Tableau dashboards for executive-level summaries.
+5. Scale & Secure the Deployment
+	• Attach an Elastic IP for a fixed address.
+	• Add basic authentication to your Streamlit app using tools like streamlit-authenticator.
+      Monitor memory usage with tools like htop or AWS CloudWatch if scaling to a production environment.
