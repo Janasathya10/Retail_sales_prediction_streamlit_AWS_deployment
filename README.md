@@ -73,9 +73,10 @@ Describes each store’s type and size.
 - **scikit-learn**, **TensorFlow**, **Statsmodels**
 - **Streamlit**, **AWS EC2**, **Nginx**, **Certbot**
 
-
 ## 🖼 App Demo Screenshot
 
-![Retail Sales Forecast App](b4aa516b-50f3-4155-8539-cbde2bdfd47f.png)
-
 🔗 **Live App URL**: [https://retail-app.duckdns.org](https://retail-app.duckdns.org)
+
+
+<img width="546" height="891" alt="image" src="https://github.com/user-attachments/assets/aa8bcd3f-7521-4dcb-9e79-580523af9368" />
+
