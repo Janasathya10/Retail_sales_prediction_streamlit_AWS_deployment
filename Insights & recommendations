@@ -31,7 +31,3 @@
 4. Enhance User Dashboard
 	• Add filters by department, region, and time range in Streamlit to give managers more control.
 	• Consider integrating Power BI or Tableau dashboards for executive-level summaries.
-5. Scale & Secure the Deployment
-	• Attach an Elastic IP for a fixed address.
-	• Add basic authentication to your Streamlit app using tools like streamlit-authenticator.
-      Monitor memory usage with tools like htop or AWS CloudWatch if scaling to a production environment.
